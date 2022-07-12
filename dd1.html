@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body style="background-color:lime">
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black" style="background-color:white" style="height:20px" >
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">  Saumii</a>
+  <a href="#tour" class="w3-button w3-bar-item">  Dumboo</a>
+  <a href="#contact" class="w3-button w3-bar-item">	 Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="d1_1.jpg"
+  style="width:60%" >
+  <img class="mySlides" src="d1_2.jpg" float="right"
+  style="width:60" >
+  <img class="mySlides" src="d1_3.jpg"
+  style="width:70%" >
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:800px" background-color="yellow">
+  <h2 class="w3-wide">Dhruvii</h2>
+ <h3> <p class="w3-opacity"><b>Everyone loves Dhruvii</b></p>
+  <p class="w3-justify">Today in the first time in history of the Earth, we are celebrating <u>"Dhruvii's Day"</u>.</p></h3>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-green">
+  <article class="w3-third">
+    <p></p>
+    <img src="d1_5.jpg" alt="Random Name" style="width:25%" "height:25%">
+  <h3>  <p style="color:red;">Dhruvii is the smartest.</p> </h3>
+  </article>
+  <article class="w3-third">
+ <h2>   <p><u/>Saumii</u></p></h2>
+    <img src="d1_6.jpg" alt="Random Name" style="width:25%" "height:25%" "float:right" "padding:5px">
+<h3>    <p style="color:red;">Dhruvii is the prettiest.</p> </h3>
+  </article>
+  <article class="w3-third">
+ <h2>   <p><u>Dhruvii</p></h2>
+    <img src="d1_4.jpg" alt="Random Name" "position:right" style="width:25%" "height:25%">
+ <h3>   <p style="color:red;">Dhruvii is the funniest.</p> </h3>
+ 
+  </article>
+</section>
+	
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+

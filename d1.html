@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar" style="background:black" style="height:50px">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="myphotos.html" class="w3-button w3-bar-item">Photos</a>
+  <a href="best.html" class="w3-button w3-bar-item">Bestie</a>
+  <a href="https://rukminim1.flixcart.com/image/416/416/kv2pk7k0/mug/k/o/r/keep-calm-and-let-dhruvi-handle-it-ceramic-coffee-mug-best-original-imag82b2mu4dzf8h.jpeg?q=70" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="d1_7.jpg"
+  style="width:75%">
+  <img class="mySlides" src="d1_9.jpg"
+  style="width:75%">
+  <img class="mySlides" src="d1_3.jpg"
+  style="width:75%">
+</section>
+
+<!-- Band Description -->
+<div style="background:orange">
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">DHRUVII</h2>
+  <p class="w3-opacity"><i>I am nice but I can rip you to pieces when I'm angry</i></p>
+  <p class="w3-justify">I love watching South Indain movies and web series and my favourite actor is Hero Alom. Apart from this I'm good at playing games and killing time. i used to talk a lot with my firend Saumua but it's complicated now as he became my accomplice.</p></br></br>
+</section></div>
+
+<!-- Band Members --><div style="background:black">
+<section class="w3-row-padding w3-center w3-black">
+  <div style="background:white">
+    <p><h3>Stylish</h3></p>
+	<p>I'm Stylish</p></div>
+    <img src="d1_4.jpg" alt="Stylish" style="width:50%" style="background:yellow">
+    
+  </article>
+  <article class="w3-third">
+    <div style="background:white">
+    <p><h3>Noice</h3></p>
+	<p>I look pretty huh !</p></div>
+    <img src="d1_5.jpg" alt="Random Name" style="width:50%">
+    
+  </article>
+  <article class="w3-third">
+    <div style="background:white">
+    <p><h3>Smartest</h3></p>
+	<p>Dhruvi is the Smartest.</p></div>
+    <img src="d1_2.jpg" alt="Random Name" style="width:50%">
+    
+  </article>
+</section></div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
